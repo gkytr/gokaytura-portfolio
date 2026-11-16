@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gökay Tura - Junior Frontend Developer Portfolio">
+    <title>Gökay Tura | Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">GT<span>.</span></a>
+
+        <nav>
+            <a href="#about" data-language="navAbout">Hakkımda</a>
+            <a href="#projects" data-language="navProjects">Projeler</a>
+            <a href="#skills" data-language="navSkills">Yetenekler</a>
+            <a href="#contact" data-language="navContact">İletişim</a>
+        </nav>
+
+        <button id="languageBtn">EN</button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span></span>
+                    Yeni fırsatlara açığım
+                </div>
+
+                <h1>
+                    Merhaba, ben<br>
+                    <span>Gökay Tura.</span>
+                </h1>
+
+                <h2>Junior Frontend Developer</h2>
+
+                <p>
+                    Yönetim Bilişim Sistemleri mezunuyum.
+                    Kullanışlı, modern ve kullanıcı odaklı
+                    web deneyimleri geliştirmeye odaklanıyorum.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Projelerimi Gör ↗</a>
+                    <a href="#contact" class="btn secondary">İletişime Geç</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/gkytr" target="_blank">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/g%C3%B6kay-tura/" target="_blank">LinkedIn ↗</a>
+                    <a href="mailto:turagokay@gmail.com">E-posta ↗</a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="card-header">
+                        <span></span><span></span><span></span>
+                        <small>developer.js</small>
+                    </div>
+
+                    <div class="avatar">GT</div>
+
+                    <h3>Gökay Tura</h3>
+                    <p>Frontend Developer</p>
+
+                    <div class="code-box">
+                        <div><span class="purple">const</span> developer = {</div>
+                        <div class="indent">name: <span class="green">'Gökay'</span>,</div>
+                        <div class="indent">location: <span class="green">'Antalya'</span>,</div>
+                        <div class="indent">focus: <span class="green">'Frontend'</span>,</div>
+                        <div class="indent">learning: <span class="green">'React'</span></div>
+                        <div>};</div>
+                    </div>
+
+                    <div class="card-status">
+                        <span></span> Sürekli öğreniyor ve geliştiriyor
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-title">
+                <span>01 / HAKKIMDA</span>
+                <h2>Merakla öğreniyor,<br>üreterek gelişiyorum.</h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Akdeniz Üniversitesi Yönetim Bilişim Sistemleri mezunuyum.
+                    Web geliştirme alanında HTML, CSS ve JavaScript
+                    bilgilerimi gerçek projeler üzerinde geliştiriyorum.
+                </p>
+
+                <p>
+                    Öğrendiklerimi çalışan projelere dönüştürmeyi,
+                    problem çözmeyi ve yeni teknolojiler keşfetmeyi seviyorum.
+                    Teknoloji sektöründe kendimi geliştirerek katkı
+                    sağlayabileceğim bir fırsat arıyorum.
+                </p>
+
+                <div class="stats">
+                    <div><strong>2025</strong><small>Mezuniyet</small></div>
+                    <div><strong>Antalya</strong><small>Konum</small></div>
+                    <div><strong>B2</strong><small>İngilizce</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-title">
+                <span>02 / PROJELER</span>
+                <h2>Üzerinde çalıştığım<br>projeler.</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card featured">
+                    <div class="project-icon">01</div>
+                    <span class="project-status">● YAYINDA</span>
+                    <h3>Hesapplar</h3>
+                    <p>
+                        KDV, yaş, indirim ve yüzde hesaplama araçlarını
+                        bir araya getiren kişisel web projem.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span>
+                        <span>JavaScript</span><span>Netlify</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hesapplar.com" target="_blank">Canlı Demo ↗</a>
+                        <a href="https://github.com/gkytr/hesaplaa" target="_blank">GitHub ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">02</div>
+                    <span class="project-status planned">PLANLANDI</span>
+                    <h3>Stok & Satış Yönetimi</h3>
+                    <p>
+                        Ürün, stok, sipariş ve kâr-zarar takibi için
+                        geliştirilecek yönetim paneli.
+                    </p>
+                    <div class="tags">
+                        <span>JavaScript</span><span>CSS</span><span>CRUD</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">03</div>
+                    <span class="project-status planned">PLANLANDI</span>
+                    <h3>Helpdesk Ticket System</h3>
+                    <p>
+                        Teknik destek taleplerinin oluşturulması,
+                        önceliklendirilmesi ve takibi için uygulama.
+                    </p>
+                    <div class="tags">
+                        <span>IT Support</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">04</div>
+                    <span class="project-status planned">PLANLANDI</span>
+                    <h3>Active Directory Lab</h3>
+                    <p>
+                        Windows Server, kullanıcı yönetimi, Group Policy,
+                        DNS ve DHCP uygulamalarını içeren laboratuvar.
+                    </p>
+                    <div class="tags">
+                        <span>Windows Server</span><span>Active Directory</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-title">
+                <span>03 / BECERİLER</span>
+                <h2>Teknik becerilerim.</h2>
+            </div>
+
+            <div class="skills-content">
+                <div>
+                    <h3>Kullandığım teknolojiler</h3>
+                    <div class="tags large">
+                        <span>HTML5</span><span>CSS3</span>
+                        <span>JavaScript</span><span>Git</span>
+                        <span>GitHub</span><span>Netlify</span>
+                        <span>Basic SQL</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Öğrenme sürecindekiler</h3>
+                    <div class="tags large muted">
+                        <span>React</span><span>REST API</span>
+                        <span>Modern CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <span>04 / İLETİŞİM</span>
+            <h2>Birlikte <br>üretelim</h2>
+            <p>Yeni fırsatlara ve iş birliklerine açığım.</p>
+            <a class="email" href="mailto:turagokay@gmail.com">
+                turagokay@gmail.com ↗
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>© 2026 Gökay Tura</span>
+        <span>HTML · CSS · JavaScript</span>
+        <a href="#home">Başa dön ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
