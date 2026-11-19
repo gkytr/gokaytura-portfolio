@@ -1,143 +1,99 @@
-
 const translations = {
     tr: {
-        navHome: "Ana Sayfa",
-        navAbout: "Hakkımda",
-        navSkills: "Beceriler",
-        navProjects: "Projeler",
-        navContact: "İletişim",
-
-        availability: "Yeni fırsatlara açığım",
-        heroGreeting: "Merhaba, ben",
-        heroTitle: "Junior Frontend Developer",
-        heroDescription: "Kullanıcı dostu, modern ve işlevsel web arayüzleri geliştirmeye odaklanan bir yazılım geliştirici adayıyım.",
-        heroButton: "Projelerimi Gör",
-        contactButton: "İletişime Geç",
-
-        aboutHeading: "Hakkımda",
-        aboutTitle: "Teknolojiye olan ilgimi<br>üretmeye dönüştürüyorum.",
-        aboutText: "Akdeniz Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. Web geliştirme alanında kendimi geliştiriyor, HTML, CSS ve JavaScript kullanarak kullanıcıların günlük ihtiyaçlarına yönelik projeler oluşturuyorum.",
-        aboutText2: "Öğrenmeye açık, araştırmacı ve çözüm odaklı bir yaklaşımla frontend geliştirme alanında kariyer hedefliyorum. Amacım gerçek projelerde yer alarak teknik becerilerimi geliştirmek ve değer üreten ürünler ortaya çıkarmak.",
-        educationLabel: "Eğitim",
-        educationDetail: "Yönetim Bilişim Sistemleri",
-        locationLabel: "Konum",
-        workPreference: "Uzaktan / Hibrit / Ofis",
-
-        skillsHeading: "Teknik Beceriler",
-        skillsDescription: "Kullandığım teknolojiler ve geliştirmeye devam ettiğim alanlar.",
-        skillHtml: "Semantik HTML ve sayfa yapısı",
-        skillCss: "Responsive tasarım ve stil düzenleme",
-        skillJs: "DOM, event ve temel uygulama mantığı",
-        skillGit: "Versiyon kontrolü ve proje yönetimi",
-        skillSql: "Temel veritabanı sorguları",
-        skillReact: "Öğrenme aşamasında",
-
-        projectsHeading: "Öne Çıkan Projeler",
-        projectsDescription: "Öğrendiklerimi pratiğe dönüştürdüğüm çalışmalar.",
-        projectDescription: "KDV, yaş, indirim ve yüzde hesaplama araçları sunan kullanıcı dostu bir hesaplama web sitesi.",
-        liveDemo: "Canlı Demo ↗",
-        projectTwoTitle: "Stok Yönetim Paneli",
-        projectTwoDescription: "Ürün, stok ve satış verilerinin takip edilebildiği bir yönetim paneli projesi.",
-        inProgress: "Geliştirme planında",
-
-
-        contactLabel: "İletişim",
-        contactHeading: "Birlikte bir şeyler<br>geliştirelim.",
-        contactDescription: "Yeni fırsatlara, iş birliklerine ve kendimi geliştirebileceğim projelere açığım. Benimle iletişime geçebilirsin.",
-
-        footerText: "Tüm hakları saklıdır.",
-        backToTop: "Yukarı çık ↑"
+        navHome:"Ana Sayfa", navAbout:"Hakkımda", navSkills:"Yetkinlikler", navProjects:"Projeler", navFocus:"Odak Alanları", navContact:"İletişim",
+        availability:"Yeni fırsatlara açığım", heroGreeting:"Merhaba, ben", heroTitle:"IT Support · Business Analysis",
+        heroDescription:"Akdeniz Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. IT destek, sistem ve ağ temelleri ile iş süreçleri analizi alanlarında kendimi geliştiriyorum. Kullanıcı ihtiyaçları ile teknik çözümler arasında köprü kurmayı hedefliyorum.",
+        heroButton:"Çalışmalarımı Gör", contactButton:"İletişime Geç",
+        aboutHeading:"Hakkımda", aboutTitle:"Teknoloji ile iş ihtiyaçları arasında köprü kuruyorum.",
+        aboutText:"Akdeniz Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. IT destek, Windows sistemleri, ağ temelleri ve iş süreçleri analizi alanlarında kendimi geliştiriyorum.",
+        aboutText2:"Problem çözme, analitik düşünme ve kullanıcı ihtiyaçlarını anlama becerilerimi uygulamalı çalışmalarla güçlendiriyorum. Junior IT Support, IT Technician ve Business Analyst / İş Analisti Asistanı pozisyonlarında katkı sunmayı hedefliyorum.",
+        educationLabel:"Eğitim", educationDetail:"Yönetim Bilişim Sistemleri", locationLabel:"Konum", workPreference:"Uzaktan / Hibrit / Ofis",
+        skillsHeading:"Yetkinlikler", skillsDescription:"Üzerinde çalıştığım teknik ve analitik alanlar.",
+        skillGroupFrontend:"Frontend Development", skillGroupBA:"Business Analysis", skillGroupIT:"IT Support", skillGroupTools:"Araçlar ve Gelişim",
+        skillCore:"Temel uygulama ve proje deneyimi", skillDeveloping:"Geliştirilmekte olan yetkinlikler", skillLab:"Laboratuvar ve öğrenme odağı", skillLearning:"Öğrenme planında / gelişim aşamasında",
+        projectsHeading:"Projeler & Çalışmalar", projectsDescription:"Tamamlanan projem ve geliştirme planındaki uygulamalı çalışmalar.",
+        filterAll:"Tümü", filterFrontend:"Frontend", filterBA:"İş Analizi", filterIT:"IT",
+        projectHesapplar:"KDV, yaş, indirim ve yüzde hesaplama araçları sunan, kullanıcı odaklı web uygulaması.",
+        liveDemo:"Canlı Demo ↗", openProject:"GitHub üzerinde incele ↗", statusDemo:"İlk demo sürümü", statusLive:"Yayında", projectInventory:"Stok Yönetim Paneli",
+        projectInventoryDesc:"Ürün, stok hareketleri ve satış performansını tek ekranda izlemeye yönelik yönetim paneli konsepti.",
+        projectProcess:"E-ticaret Süreç Analizi", projectProcessDesc:"Siparişten teslimata iş akışının incelenmesi; AS-IS / TO-BE süreçleri, kullanıcı hikâyeleri ve kabul kriterleri.",
+        projectAD:"Windows Server & Active Directory Lab", projectADDesc:"Windows Server üzerinde Active Directory, OU, kullanıcı ve grup yönetimi ile temel Group Policy ve DNS kontrollerini içeren ev laboratuvarı.",
+        statusPlanned:"Geliştirme planında", statusLab:"Lab çalışması", projectsNote:"Not: Geliştirme planındaki çalışmalar tamamlanıp doğrulanana kadar planlanan proje olarak işaretlenmiştir.",
+        focusHeading:"Çalışma Alanlarım", focusFrontend:"Frontend Development", focusFrontendDesc:"Kullanıcı dostu, erişilebilir ve farklı ekranlara uyum sağlayan web arayüzleri.",
+        focusBA:"Business Analysis", focusBADesc:"İş ihtiyaçlarını anlama, gereksinimleri netleştirme ve süreçleri iyileştirme.",
+        focusIT:"IT Support", focusITDesc:"Son kullanıcı desteği, sistem ve ağ temelleri, sistematik sorun giderme.",
+        contactLabel:"İletişim", contactHeading:"Birlikte değer<br>üretelim.", contactDescription:"Yeni fırsatlara, iş birliklerine ve teknik yetkinliklerimi geliştirebileceğim projelere açığım. Benimle iletişime geçebilirsin.",
+        footerText:"Tüm hakları saklıdır.", backToTop:"Yukarı çık ↑"
     },
-
     en: {
-        navHome: "Home",
-        navAbout: "About",
-        navSkills: "Skills",
-        navProjects: "Projects",
-        navContact: "Contact",
-
-        availability: "Open to new opportunities",
-        heroGreeting: "Hello, I'm",
-        heroTitle: "Junior Frontend Developer",
-        heroDescription: "An aspiring developer focused on building modern, functional, and user-friendly web interfaces.",
-        heroButton: "View My Projects",
-        contactButton: "Get in Touch",
-
-        aboutHeading: "About Me",
-        aboutTitle: "Turning my interest in<br>technology into creation.",
-        aboutText: "I am a Management Information Systems graduate from Akdeniz University. I am developing my skills in web development and building projects with HTML, CSS, and JavaScript to solve everyday user needs.",
-        aboutText2: "I aim to build a career in frontend development with a curious, research-oriented, and solution-focused mindset. My goal is to improve my technical skills through real-world projects and create products that deliver value.",
-        educationLabel: "Education",
-        educationDetail: "Management Information Systems",
-        locationLabel: "Location",
-        workPreference: "Remote / Hybrid / On-site",
-
-        skillsHeading: "Technical Skills",
-        skillsDescription: "Technologies I use and areas I continue to develop.",
-        skillHtml: "Semantic HTML and page structure",
-        skillCss: "Responsive design and styling",
-        skillJs: "DOM, events, and basic application logic",
-        skillGit: "Version control and project management",
-        skillSql: "Basic database queries",
-        skillReact: "Currently learning",
-
-        projectsHeading: "Featured Projects",
-        projectsDescription: "Projects where I turn what I learn into practice.",
-        projectDescription: "A user-friendly calculation website featuring VAT, age, discount, and percentage calculators.",
-        liveDemo: "Live Demo ↗",
-        projectTwoTitle: "Inventory Management Dashboard",
-        projectTwoDescription: "A planned dashboard project for tracking products, inventory, and sales data.",
-        inProgress: "Planned project",
-
-        contactLabel: "Contact",
-        contactHeading: "Let's build something<br>together.",
-        contactDescription: "I am open to new opportunities, collaborations, and projects where I can continue to grow. Feel free to get in touch.",
-
-        footerText: "All rights reserved.",
-        backToTop: "Back to top ↑"
+        navHome:"Home", navAbout:"About", navSkills:"Skills", navProjects:"Projects", navFocus:"Focus Areas", navContact:"Contact",
+        availability:"Open to new opportunities", heroGreeting:"Hello, I'm", heroTitle:"IT Support · Business Analysis",
+        heroDescription:"I am a Management Information Systems graduate developing my skills in IT support, Windows and networking fundamentals, and business process analysis. I aim to connect user needs with practical technical solutions.",
+        heroButton:"View My Work", contactButton:"Get in Touch",
+        aboutHeading:"About Me", aboutTitle:"Connecting technology with business needs.",
+        aboutText:"I am a Management Information Systems graduate from Akdeniz University, developing my skills in IT support, Windows systems, networking fundamentals and business process analysis.",
+        aboutText2:"I am strengthening my problem-solving, analytical thinking and user-needs analysis through hands-on work. I am interested in junior IT Support, IT Technician and Business Analyst opportunities.",
+        educationLabel:"Education", educationDetail:"Management Information Systems", locationLabel:"Location", workPreference:"Remote / Hybrid / On-site",
+        skillsHeading:"Skills & Competencies", skillsDescription:"Technical and analytical areas I am actively developing.",
+        skillGroupFrontend:"Frontend Development", skillGroupBA:"Business Analysis", skillGroupIT:"IT Support", skillGroupTools:"Tools & Further Learning",
+        skillCore:"Foundational hands-on project experience", skillDeveloping:"Competencies in development", skillLab:"Lab and learning focus", skillLearning:"Planned learning / developing",
+        projectsHeading:"Projects & Case Studies", projectsDescription:"My published project and practical work currently in the development plan.",
+        filterAll:"All", filterFrontend:"Frontend", filterBA:"Business Analysis", filterIT:"IT",
+        projectHesapplar:"A user-focused web application offering VAT, age, discount and percentage calculators.",
+        liveDemo:"Live Demo ↗", openProject:"View on GitHub ↗", statusDemo:"Initial demo", statusLive:"Live", projectInventory:"Inventory Management Dashboard",
+        projectInventoryDesc:"A dashboard concept for monitoring products, stock movements and sales performance in one place.",
+        projectProcess:"E-commerce Process Analysis", projectProcessDesc:"Reviewing the order-to-delivery workflow, including AS-IS / TO-BE processes, user stories and acceptance criteria.",
+        projectAD:"Windows Server & Active Directory Lab", projectADDesc:"A home lab covering Windows Server, Active Directory, OU and user/group management, baseline Group Policy and DNS checks.",
+        statusPlanned:"Planned", statusLab:"Lab in progress", projectsNote:"Note: Planned items are clearly marked until the work is completed and verified.",
+        focusHeading:"Focus Areas", focusFrontend:"Frontend Development", focusFrontendDesc:"Building user-friendly, accessible and responsive web interfaces.",
+        focusBA:"Business Analysis", focusBADesc:"Understanding business needs, clarifying requirements and improving processes.",
+        focusIT:"IT Support", focusITDesc:"End-user support, system and networking fundamentals, and structured troubleshooting.",
+        contactLabel:"Contact", contactHeading:"Let's create<br>something valuable.", contactDescription:"I am open to new opportunities, collaboration and projects where I can continue developing my technical skills. Feel free to get in touch.",
+        footerText:"All rights reserved.", backToTop:"Back to top ↑"
     }
 };
 
 let currentLanguage = "tr";
-
 const languageButton = document.getElementById("language-btn");
 
 function changeLanguage() {
     currentLanguage = currentLanguage === "tr" ? "en" : "tr";
-
     document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const key = element.dataset.i18n;
-        const translatedText = translations[currentLanguage][key];
-
-        if (translatedText) {
-            element.innerHTML = translatedText;
-        }
+        const translatedText = translations[currentLanguage][element.dataset.i18n];
+        if (translatedText) element.innerHTML = translatedText;
     });
-
     languageButton.textContent = currentLanguage === "tr" ? "EN" : "TR";
-
     document.documentElement.lang = currentLanguage;
 }
-
 languageButton.addEventListener("click", changeLanguage);
 
-
-// Mobile menu
-
+// Mobile navigation
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
-
 menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+    const isOpen = navLinks.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => navLinks.classList.remove("active"));
 });
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+// Project category filters
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card[data-category]");
+filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        filterButtons.forEach((item) => {
+            const active = item === button;
+            item.classList.toggle("active", active);
+            item.setAttribute("aria-pressed", String(active));
+        });
+        projectCards.forEach((card) => {
+            card.hidden = filter !== "all" && card.dataset.category !== filter;
+        });
     });
 });
 
-
 // Automatic footer year
-
 document.getElementById("year").textContent = new Date().getFullYear();
