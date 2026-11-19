@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gökay Tura - Junior Frontend Developer Portfolio">
-    <title>Gökay Tura | Frontend Developer</title>
+    <meta name="description" content="Gökay Tura | Management Information Systems graduate focused on frontend development, business analysis and IT support.">
+    <title>Gökay Tura | Technology & Business</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,9 @@
                 <a href="#home" data-i18n="navHome">Ana Sayfa</a>
                 <a href="#about" data-i18n="navAbout">Hakkımda</a>
                 <a href="#skills" data-i18n="navSkills">Beceriler</a>
+                <a href="#skills" data-i18n="navSkills">Yetkinlikler</a>
                 <a href="#projects" data-i18n="navProjects">Projeler</a>
+                <a href="#focus" data-i18n="navFocus">Odak Alanları</a>
                 <a href="#contact" data-i18n="navContact">İletişim</a>
                 <button class="language-btn" id="language-btn">EN</button>
             </div>
@@ -48,11 +50,10 @@
 
                     <h1>Gökay <span>Tura.</span></h1>
 
-                    <h2 data-i18n="heroTitle">Junior Frontend Developer</h2>
+                    <h2 data-i18n="heroTitle">Frontend Development · Business Analysis · IT Support</h2>
 
                     <p class="hero-description" data-i18n="heroDescription">
-                        Kullanıcı dostu, modern ve işlevsel web arayüzleri
-                        geliştirmeye odaklanan bir yazılım geliştirici adayıyım.
+                        Yönetim Bilişim Sistemleri altyapımı web geliştirme, iş süreçleri analizi ve bilgi teknolojileri alanlarına taşıyorum. Teknoloji ile iş ihtiyaçları arasında köprü kuran çözümler üretmeye odaklanıyorum.
                     </p>
 
                     <div class="hero-buttons">
@@ -82,12 +83,12 @@
                         <div class="code-content">
                             <p><span class="code-purple">const</span> developer = {</p>
                             <p class="indent">name: <span class="code-green">'Gökay Tura'</span>,</p>
-                            <p class="indent">role: <span class="code-green">'Frontend Developer'</span>,</p>
+                            <p class="indent">focus: <span class="code-green">'Technology & Business'</span>,</p>
                             <p class="indent">skills: [</p>
                             <p class="indent double"> 'HTML', 'CSS',</p>
                             <p class="indent double"> 'JavaScript'</p>
                             <p class="indent">],</p>
-                            <p class="indent">learning: <span class="code-green">'React'</span>,</p>
+                            <p class="indent">mindset: <span class="code-green">'Continuous learning'</span>,</p>
                             <p class="indent">openToWork: <span class="code-orange">true</span></p>
                             <p>};</p>
                             <p class="code-comment">// Always learning...</p>
@@ -150,49 +151,34 @@
             <div class="container">
                 <div class="section-heading">
                     <span class="section-number">02 /</span>
-                    <h2 data-i18n="skillsHeading">Teknik Beceriler</h2>
+                    <h2 data-i18n="skillsHeading">Yetkinlikler</h2>
                 </div>
-
-                <p class="section-description" data-i18n="skillsDescription">
-                    Kullandığım teknolojiler ve geliştirmeye devam ettiğim alanlar.
-                </p>
-
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <span class="skill-icon">01</span>
-                        <h3>HTML5</h3>
-                        <p data-i18n="skillHtml">Semantik HTML ve sayfa yapısı</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">02</span>
-                        <h3>CSS3</h3>
-                        <p data-i18n="skillCss">Responsive tasarım ve stil düzenleme</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">03</span>
-                        <h3>JavaScript</h3>
-                        <p data-i18n="skillJs">DOM, event ve temel uygulama mantığı</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">04</span>
-                        <h3>Git & GitHub</h3>
-                        <p data-i18n="skillGit">Versiyon kontrolü ve proje yönetimi</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">05</span>
-                        <h3>SQL</h3>
-                        <p data-i18n="skillSql">Temel veritabanı sorguları</p>
-                    </div>
-
-                    <div class="skill-card learning-card">
-                        <span class="skill-icon">06</span>
-                        <h3>React</h3>
-                        <p data-i18n="skillReact">Öğrenme aşamasında</p>
-                    </div>
+                <p class="section-description" data-i18n="skillsDescription">Üzerinde çalıştığım teknik ve analitik alanlar.</p>
+                <div class="skills-grid skills-groups">
+                    <article class="skill-card skill-group">
+                        <span class="skill-icon">01 / DEVELOPMENT</span>
+                        <h3 data-i18n="skillGroupFrontend">Frontend Development</h3>
+                        <p>HTML5 · CSS3 · JavaScript · Responsive Design · DOM · Git & GitHub</p>
+                        <span class="skill-level" data-i18n="skillCore">Temel uygulama ve proje deneyimi</span>
+                    </article>
+                    <article class="skill-card skill-group">
+                        <span class="skill-icon">02 / ANALYSIS</span>
+                        <h3 data-i18n="skillGroupBA">Business Analysis</h3>
+                        <p>SQL · Excel · Requirements Analysis · User Stories · Process Modeling</p>
+                        <span class="skill-level" data-i18n="skillDeveloping">Geliştirilmekte olan yetkinlikler</span>
+                    </article>
+                    <article class="skill-card skill-group">
+                        <span class="skill-icon">03 / TECHNOLOGY</span>
+                        <h3 data-i18n="skillGroupIT">IT Support</h3>
+                        <p>Windows · Hardware Troubleshooting · Networking · DNS · DHCP · Active Directory</p>
+                        <span class="skill-level" data-i18n="skillLab">Laboratuvar ve öğrenme odağı</span>
+                    </article>
+                    <article class="skill-card skill-group learning-card">
+                        <span class="skill-icon">04 / LEARNING</span>
+                        <h3 data-i18n="skillGroupTools">Tools & Further Learning</h3>
+                        <p>React · Power BI · Jira · Draw.io · Cisco Packet Tracer</p>
+                        <span class="skill-level" data-i18n="skillLearning">Öğrenme planında / gelişim aşamasında</span>
+                    </article>
                 </div>
             </div>
         </section>
@@ -201,60 +187,63 @@
             <div class="container">
                 <div class="section-heading">
                     <span class="section-number">03 /</span>
-                    <h2 data-i18n="projectsHeading">Öne Çıkan Projeler</h2>
+                    <h2 data-i18n="projectsHeading">Projeler & Çalışmalar</h2>
                 </div>
-
-                <p class="section-description" data-i18n="projectsDescription">
-                    Öğrendiklerimi pratiğe dönüştürdüğüm çalışmalar.
-                </p>
-
+                <p class="section-description" data-i18n="projectsDescription">Tamamlanan projem ve geliştirme planındaki uygulamalı çalışmalar.</p>
+                <div class="project-filters" role="group" aria-label="Project filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filterAll" aria-pressed="true">Tümü</button>
+                    <button class="filter-btn" data-filter="frontend" data-i18n="filterFrontend" aria-pressed="false">Frontend</button>
+                    <button class="filter-btn" data-filter="ba" data-i18n="filterBA" aria-pressed="false">İş Analizi</button>
+                    <button class="filter-btn" data-filter="it" data-i18n="filterIT" aria-pressed="false">IT</button>
+                </div>
                 <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-category">01 — WEB APPLICATION</span>
-                            <span class="project-arrow">↗</span>
-                        </div>
-
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-top"><span class="project-category">01 — WEB APPLICATION</span><span class="project-arrow">↗</span></div>
                         <h3>Hesapplar</h3>
-
-                        <p data-i18n="projectDescription">
-                            KDV, yaş, indirim ve yüzde hesaplama araçları sunan
-                            kullanıcı dostu bir hesaplama web sitesi.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
+                        <p data-i18n="projectHesapplar">KDV, yaş, indirim ve yüzde hesaplama araçları sunan, kullanıcı odaklı web uygulaması.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span></div>
                         <div class="project-links">
                             <a href="https://hesapplar.com" target="_blank" rel="noopener noreferrer" data-i18n="liveDemo">Canlı Demo ↗</a>
                             <a href="https://github.com/gkytr/hesaplaa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                         </div>
+                        <span class="project-status status-complete" data-i18n="statusLive">Yayında</span>
                     </article>
-
-                    <article class="project-card project-placeholder">
-                        <div class="project-top">
-                            <span class="project-category">02 — IN PROGRESS</span>
-                            <span class="project-arrow">↗</span>
-                        </div>
-
-                        <h3 data-i18n="projectTwoTitle">Stok Yönetim Paneli</h3>
-
-                        <p data-i18n="projectTwoDescription">
-                            Ürün, stok ve satış verilerinin takip edilebildiği
-                            bir yönetim paneli projesi.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                        <span class="project-status" data-i18n="inProgress">Geliştirme planında</span>
+                    <article class="project-card project-planned" data-category="frontend">
+                        <div class="project-top"><span class="project-category">02 — FRONTEND CASE</span><span class="project-arrow">↗</span></div>
+                        <h3 data-i18n="projectInventory">Stok Yönetim Paneli</h3>
+                        <p data-i18n="projectInventoryDesc">Ürün, stok hareketleri ve satış performansını tek ekranda izlemeye yönelik yönetim paneli konsepti.</p>
+                        <div class="project-tags"><span>JavaScript</span><span>Dashboard UI</span><span>Charts</span></div>
+                        <span class="project-status" data-i18n="statusPlanned">Geliştirme planında</span>
                     </article>
+                    <article class="project-card project-planned" data-category="ba">
+                        <div class="project-top"><span class="project-category">03 — BUSINESS ANALYSIS</span><span class="project-arrow">↗</span></div>
+                        <h3 data-i18n="projectProcess">E-ticaret Süreç Analizi</h3>
+                        <p data-i18n="projectProcessDesc">Siparişten teslimata iş akışının incelenmesi; AS-IS / TO-BE süreçleri, kullanıcı hikâyeleri ve kabul kriterleri.</p>
+                        <div class="project-tags"><span>BPMN</span><span>User Story</span><span>Acceptance Criteria</span></div>
+                        <span class="project-status" data-i18n="statusPlanned">Geliştirme planında</span>
+                    </article>
+                    <article class="project-card project-planned" data-category="it">
+                        <div class="project-top"><span class="project-category">04 — IT LAB</span><span class="project-arrow">↗</span></div>
+                        <h3 data-i18n="projectAD">Windows Server & Active Directory Lab</h3>
+                        <p data-i18n="projectADDesc">Test ortamında domain, kullanıcı ve grup yönetimi ile DNS ve DHCP yapılandırmalarını uygulamaya yönelik laboratuvar çalışması.</p>
+                        <div class="project-tags"><span>Windows Server</span><span>Active Directory</span><span>DNS</span><span>DHCP</span></div>
+                        <span class="project-status" data-i18n="statusPlanned">Geliştirme planında</span>
+                    </article>
+                </div>
+                <p class="projects-note" data-i18n="projectsNote">Not: Geliştirme planındaki çalışmalar tamamlanıp doğrulanana kadar planlanan proje olarak işaretlenmiştir.</p>
+            </div>
+        </section>
+
+        <section class="section focus-section" id="focus">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-number">04 /</span>
+                    <h2 data-i18n="focusHeading">Çalışma Alanlarım</h2>
+                </div>
+                <div class="focus-grid">
+                    <article class="focus-card"><span>01</span><h3 data-i18n="focusFrontend">Frontend Development</h3><p data-i18n="focusFrontendDesc">Kullanıcı dostu, erişilebilir ve farklı ekranlara uyum sağlayan web arayüzleri.</p></article>
+                    <article class="focus-card"><span>02</span><h3 data-i18n="focusBA">Business Analysis</h3><p data-i18n="focusBADesc">İş ihtiyaçlarını anlama, gereksinimleri netleştirme ve süreçleri iyileştirme.</p></article>
+                    <article class="focus-card"><span>03</span><h3 data-i18n="focusIT">IT Support</h3><p data-i18n="focusITDesc">Son kullanıcı desteği, sistem ve ağ temelleri, sistematik sorun giderme.</p></article>
                 </div>
             </div>
         </section>
@@ -262,7 +251,7 @@
         <section class="section contact-section" id="contact">
             <div class="container">
                 <div class="contact-content">
-                    <span class="section-number">04 / <span data-i18n="contactLabel">İletişim</span></span>
+                    <span class="section-number">05 / <span data-i18n="contactLabel">İletişim</span></span>
 
                     <h2 data-i18n="contactHeading">
                         Birlikte <br>
