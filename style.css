@@ -747,3 +747,37 @@ button {
         gap: 7px;
     }
 }
+
+
+/* Portfolio refresh: grouped skills, project filters and focus areas */
+.hero h2 {
+    max-width: 620px;
+    line-height: 1.45;
+}
+.hero-description { max-width: 570px; }
+.skills-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.skill-group { min-height: 220px; display: flex; flex-direction: column; align-items: flex-start; }
+.skill-group p { line-height: 1.9; }
+.skill-level { margin-top: auto; padding-top: 22px; color: var(--accent-light); font-size: 12px; }
+.project-filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
+.filter-btn { border: 1px solid var(--border); background: var(--surface); color: var(--muted); padding: 9px 16px; border-radius: 999px; cursor: pointer; font-size: 13px; transition: .2s ease; }
+.filter-btn:hover, .filter-btn.active { color: var(--text); border-color: var(--accent); background: rgba(139,124,255,.14); }
+.project-card[hidden] { display: none; }
+.project-planned { border-style: dashed; }
+.status-complete { color: var(--green); }
+.projects-note { color: var(--muted); font-size: 12px; margin-top: 22px; }
+.focus-section { background: var(--background); }
+.focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.focus-card { padding: 28px; border: 1px solid var(--border); border-radius: 14px; background: linear-gradient(145deg, var(--surface), rgba(17,21,30,.55)); transition: transform .2s ease, border-color .2s ease; }
+.focus-card:hover { transform: translateY(-4px); border-color: rgba(139,124,255,.5); }
+.focus-card > span { color: var(--accent-light); font: 12px monospace; }
+.focus-card h3 { margin: 22px 0 10px; font: 600 20px "Space Grotesk", sans-serif; }
+.focus-card p { color: var(--muted); font-size: 13px; }
+@media (max-width: 850px) {
+    .focus-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+    .skills-groups { grid-template-columns: 1fr; }
+    .project-filters { gap: 7px; }
+    .filter-btn { padding: 8px 12px; font-size: 12px; }
+}
